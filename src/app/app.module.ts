@@ -8,6 +8,10 @@ import { NavbarComponent } from './funciones/navbar/navbar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './funciones/shared.module';
 import { PagesModule } from './acciones/pages/pages.module';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { PedirComponent } from './acciones/pages/pedir/pedir.component';
+import { FormsModule } from '@angular/forms';
+import { DonarComponent } from './acciones/pages/donar/donar.component';
 
 @NgModule({
   declarations: [
@@ -16,10 +20,11 @@ import { PagesModule } from './acciones/pages/pages.module';
   ],
   imports: [
     BrowserModule,
-    
     AppRoutingModule,
     SharedModule,
-    PagesModule
+    PagesModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

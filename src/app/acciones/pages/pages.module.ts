@@ -6,6 +6,8 @@ import { DonarComponent } from './donar/donar.component';
 import { VerLibroComponent } from './ver-libro/ver-libro.component';
 import { verifyHostBindings } from '@angular/compiler';
 import { RouterModule } from '@angular/router';
+import { InicioComponent } from './inicio/inicio.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -14,17 +16,20 @@ import { RouterModule } from '@angular/router';
     PedirComponent,
     SacarComponent,
     DonarComponent,
-    VerLibroComponent
+    VerLibroComponent,
+    InicioComponent
   ],
   exports:[
     PedirComponent,
     SacarComponent,
     DonarComponent,
-    VerLibroComponent
+    VerLibroComponent,
+    InicioComponent
   ],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ]
 })
 export class PagesModule { }

@@ -1,1 +1,52 @@
-<p>sacar works!</p>
+<h1>Bienvenido!</h1>
+<hr>
+<div class="text-center">
+    <h2>Para seleccionar su libro llene las caracteristicas del mismo</h2>
+</div>
+<hr>
+<div class="row">
+    <div class="col text-center">
+        <h3>Seleccione el tema</h3>
+        <select name="temaLibri" class="">
+            <option value="select">Seleccione su tema</option>
+            <option value="Calculo">Calculo</option>
+            <option value="FundInves">Fundamentos de Investigacion</option>
+            <option value="Quimica">Quimica</option>
+            <option value="Algebra">Algebra</option>
+            <option value="ProbEstadis">Probabilidad y Estadistica</option>
+            <option value="Fisica">Fisica</option>
+        </select>
+        <h3>Ingrese el autor del libro</h3>
+        <input type="text" placeholder="Nombre del Autor">
+    </div>
+    <div class="col text-center">
+        <h3>Ingrese el Titulo</h3>
+        <input type="text" placeholder="Titulo del Libro">
+        <h3>Ingrese el Donador</h3>
+        <input type="text" placeholder="Nombre del Donador">
+    </div>
+    
+</div>
+<hr>
+<div class="text-center">
+    <button type="submit" class="btn btn-primary w-25">Sacar Libro</button>
+</div>
+
+<hr>
+<div class="text-center">
+    <h2>Selecciona Aqui tu libro</h2>
+</div>
+<hr>   
+
+<table class="table mt-3">
+   <thead class="thead-dark">
+      <tr>
+         <th scope="col">#</th>
+         <th scope="col">Nombre del Libro</th>
+         <th scope="col">Tema del Libro</th>
+         <th scope="col">Nombre del Autor</th>
+         <th scope="col">Nombre del Donador</th>
+         <th scope="col">Estado</th>
+      </tr>
+   </thead>
+</table>
